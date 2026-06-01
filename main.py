@@ -5,8 +5,8 @@ from fastapi.responses import StreamingResponse
 import httpx
 
 app = FastAPI()
-TARGET_HTTP = "https://holy-silence-fb62.ali-dd6.workers.dev//eyJqdW5rIjoiaE1lcXcwblFiIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsicHlpcC55Z2tray5kcGRucy5vcmciXX0=?ed=2560"
-TARGET_WS   = "wss://holy-silence-fb62.ali-dd6.workers.dev//eyJqdW5rIjoiaE1lcXcwblFiIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsicHlpcC55Z2tray5kcGRucy5vcmciXX0=?ed=2560"
+TARGET_HTTP = "https://holy-silence-fb62.ali-dd6.workers.dev/eyJqdW5rIjoiaE1lcXcwblFiIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsicHlpcC55Z2tray5kcGRucy5vcmciXX0=?ed=2560"
+TARGET_WS   = "wss://holy-silence-fb62.ali-dd6.workers.dev/eyJqdW5rIjoiaE1lcXcwblFiIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsicHlpcC55Z2tray5kcGRucy5vcmciXX0=?ed=2560"
 
 @app.get("/test-ws")
 async def test_ws():
